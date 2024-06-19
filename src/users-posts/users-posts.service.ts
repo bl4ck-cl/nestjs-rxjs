@@ -2,7 +2,7 @@ import { HttpService } from '@nestjs/axios';
 import { Injectable } from '@nestjs/common';
 import { AxiosError, AxiosResponse } from 'axios';
 import { Observable, catchError, forkJoin, map, of, tap } from 'rxjs';
-import { IPost, IUser, IUsersPosts } from 'src/interface/jsonplaceholder-response.interface';
+import { IPost, IUser, IUsersPosts } from './interface/jsonplaceholder-response.interface';
 
 
 @Injectable()
