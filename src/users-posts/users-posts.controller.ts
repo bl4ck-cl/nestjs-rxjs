@@ -7,7 +7,7 @@ import { IUsersPosts } from './interface/jsonplaceholder-response.interface';
 export class UsersPostsController {
 constructor(private readonly appService: UsersPostsService) {}
     
-  @Get('')
+  @Get()
   getUserPost(): Observable<IUsersPosts> {
     return this.appService.getUserPost();
   }
